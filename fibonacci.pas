@@ -8,7 +8,8 @@ PROGRAM Fibonacci;
 BEGIN
   a := 0;
   b := 1;
-  FOR n := 1 TO 30 DO
+  WRITE(a, ', ', b, ', ');
+  FOR n := 1 TO 28 DO
     BEGIN
       c := a + b;
       WRITE(c, ', ');
