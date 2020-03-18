@@ -15,8 +15,18 @@ BEGIN
     BEGIN
       IF a = 0 THEN
         BEGIN
-	  x1 := -b/c;
-	  WRITELN('x1 = ', x1);
+	  IF b <> 0 THEN
+	    BEGIN
+	      x1 := -c/b;
+	      WRITELN('x1 = ', x1);
+	    END
+	  ELSE
+	    BEGIN
+              IF c = 0 THEN
+	        WRITELN(0)
+	      ELSE
+	        WRITELN('Keine reelle Loesung.')
+	    END
 	END
       ELSE
         BEGIN

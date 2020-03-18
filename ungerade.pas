@@ -9,7 +9,7 @@ BEGIN
   rep := 1;
   summe := 0;
   REPEAT
-    summe += x;
+    summe += x; 
     x += 2;
     rep += 1
   UNTIL rep = 101;
