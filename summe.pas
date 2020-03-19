@@ -1,8 +1,8 @@
 PROGRAM Summe;
   VAR
-    n : Integer;
-    i : Integer;
-    sum : Integer;
+    n : Longint;
+    i : Longint;
+    sum : Longint;
 
 BEGIN
   READ(n);
