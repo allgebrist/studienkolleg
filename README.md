@@ -4,6 +4,6 @@ Das Verzeichnis beinthaltet Lösungen zu den Aufgaben von:
 
 ---
 
-Kurs: 348T
+Kurs: 348T (WS2019/SS2020)
 
 Name: Zea, Allan
