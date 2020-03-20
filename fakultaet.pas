@@ -1,8 +1,8 @@
 PROGRAM Fakultaet;
   VAR
-    f : Integer;
-    n : Integer;
-    i : Integer;
+    f : Longint;
+    n : Longint;
+    i : Longint;
 BEGIN
   f := 1;
   READ(n);
