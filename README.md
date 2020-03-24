@@ -1,4 +1,4 @@
-## TU Berlin Studienkolleg: Informatik Aufgaben
+## Studienkolleg (TU Berlin): Informatik Aufgaben
 Das Verzeichnis beinthaltet Lösungen zu den Aufgaben von:
 - Übungsblatt 1 (Aufgaben 1 bis 20)
 
