@@ -3,7 +3,7 @@ PROGRAM Dualzahl.pas;
     n : Longint;
     k : Integer;
     stellen : Integer; (* Dualzahl *)
-    dual : array[0..10] of Integer;
+    dual : array[0..32] of Integer;
 
 BEGIN
   READ(n);

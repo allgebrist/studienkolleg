@@ -3,7 +3,7 @@ PROGRAM Oktalzahl.pas;
     n : Longint;
     k : Integer;
     stellen : Integer;
-    oktal : array[0..10] of Integer;
+    oktal : array[0..32] of Integer;
 
 BEGIN
   READ(n);
