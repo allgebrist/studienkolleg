@@ -2,7 +2,7 @@ PROGRAM Dualzahl.pas;
   VAR
     n : Longint;
     k : Integer;
-    stellen : Integer; (* Dualzahl *)
+    stellen : Integer; 
     dual : array[0..32] of Integer;
 
 BEGIN
