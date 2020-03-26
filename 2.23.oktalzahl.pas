@@ -1,4 +1,4 @@
-PROGRAM Oktalzahl.pas;
+PROGRAM Oktalzahl;
   VAR
     n : Longint;
     k : Integer;

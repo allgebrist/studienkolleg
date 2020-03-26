@@ -1,4 +1,4 @@
-PROGRAM Dualzahl.pas;
+PROGRAM Dualzahl;
   VAR
     n : Longint;
     k : Integer;

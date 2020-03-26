@@ -1,4 +1,4 @@
-PROGRAM Dezimalzahl.pas;
+PROGRAM Dezimalzahl;
   VAR
     dual : String[8];
 
