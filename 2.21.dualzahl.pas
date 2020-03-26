@@ -2,20 +2,20 @@ PROGRAM Dualzahl;
   VAR
     n : Longint;
     k : Integer;
-    stellen : Integer; 
+    stelle : Integer; 
     dual : array[0..32] of Integer;
 
 BEGIN
   READ(n);
-  stellen := 0;
+  stelle := 0;
   WHILE n > 0 DO
     BEGIN
-      dual[stellen] := n MOD 2;
+      dual[stelle] := n MOD 2;
       n := n DIV 2;
-      stellen += 1;
+      stelle += 1;
     END;
   
-  FOR k := stellen-1 DOWNTO 0 DO
+  FOR k := stelle-1 DOWNTO 0 DO
     WRITE(dual[k]);
 
   WRITELN()

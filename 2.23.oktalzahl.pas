@@ -2,20 +2,20 @@ PROGRAM Oktalzahl;
   VAR
     n : Longint;
     k : Integer;
-    stellen : Integer;
+    stelle : Integer;
     oktal : array[0..32] of Integer;
 
 BEGIN
   READ(n);
-  stellen := 0;
+  stelle := 0;
   WHILE n > 0 DO
     BEGIN
-      oktal[stellen] := n MOD 8;
+      oktal[stelle] := n MOD 8;
       n := n DIV 8;
-      stellen += 1;
+      stelle += 1;
     END;
 
-  FOR k := stellen-1 DOWNTO 0 DO
+  FOR k := stelle-1 DOWNTO 0 DO
     WRITE(oktal[k]);
 
   WRITELN()
