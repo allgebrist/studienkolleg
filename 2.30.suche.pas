@@ -12,5 +12,8 @@ BEGIN
       IF ((tmp > gnz) AND (tmp < 0)) THEN
         gnz := tmp;
     END;
-  WRITELN(gnz);
+  IF gnz = -2147483648 THEN
+    WRITELN('Keine negative Zahl gefunden.')
+  ELSE
+    WRITELN('Die groesste negative Zahl ist: ', gnz);
 END.
