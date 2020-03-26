@@ -27,7 +27,11 @@ BEGIN
   WHILE i <= j DO
     BEGIN
       IF i + j = n THEN
-        WRITELN(i, ' ', j);
+        BEGIN
+          WRITELN(i, ' ', j);
+	  IF i <> j THEN
+	    WRITELN(j, ' ', i);
+	END;
       IF i + j > n THEN
         j -= 1
       ELSE
