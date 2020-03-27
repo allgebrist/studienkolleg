@@ -21,7 +21,8 @@ BEGIN
 
   (* Method 2: Two-pointers.
                Runs in O(n). 
-	       Shows unique pairs. *)
+	       Shows unique or 
+	       repeated pairs. *)
 
   i := 1; j := n;
   WHILE i <= j DO
