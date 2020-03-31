@@ -11,7 +11,10 @@ BEGIN
   SetLength(zahlen, n);
   
   FOR i := 0 TO n-1 DO
-    READ(zahlen[i]);
+    BEGIN
+      READ(zahlen[i]);
+      zahlen[i] := -zahlen[i];
+    END;
   
   FOR i := 0 TO n-1 DO
     BEGIN
@@ -33,7 +36,7 @@ BEGIN
     END;
 
   FOR i := 0 TO n-1 DO
-    WRITE(zahlen[i], ' ');
+    WRITE(-zahlen[i], ' ');
 
   WRITELN()
 
