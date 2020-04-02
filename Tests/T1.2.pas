@@ -1,4 +1,4 @@
-(* Die erste Aufgabe kann mithilfe 
+(* Die erste Aufgabe (T1.1) kann mithilfe 
    einer verketteten Liste gelöst werden *)
 
 PROGRAM OhneArray;
@@ -30,7 +30,7 @@ BEGIN
 END;
 
 
-Procedure Schreiben;
+PROCEDURE Schreiben;
 VAR
   temp : Knoten;
 BEGIN
