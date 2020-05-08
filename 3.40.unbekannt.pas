@@ -14,7 +14,7 @@ PROCEDURE Rule90(n : Integer);
 	x := 0;
 	WHILE x + y < n DO
 	  BEGIN
-            IF x and y <> 0 THEN
+            IF x AND y <> 0 THEN
 	      WRITE(' ', ' ')
 	    ELSE
 	      WRITE('* ');
