@@ -12,11 +12,11 @@ PROCEDURE Sortieren(vektor : array of Integer; laenge : Integer);
 
 BEGIN
 
-  FOR i := 0 TO n-1 DO
+  FOR i := 0 TO laenge-1 DO
     BEGIN
       temp_min_idx := i;
       temp_min := vektor[i];
-      FOR j := i+1 TO n-1 DO
+      FOR j := i+1 TO laenge-1 DO
         BEGIN
           IF vektor[j] < vektor[temp_min_idx] THEN
             BEGIN
@@ -31,7 +31,7 @@ BEGIN
         END;
     END;
     
-    FOR i := 0 TO n-1 DO
+    FOR i := 0 TO laenge-1 DO
       WRITE(-vektor[i], ' ');
 
     WRITELN()
