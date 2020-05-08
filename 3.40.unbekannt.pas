@@ -1,4 +1,5 @@
 PROGRAM Unbekannt;
+USES Crt;
 
 PROCEDURE Rule90(n : Integer);
   VAR
@@ -22,6 +23,7 @@ PROCEDURE Rule90(n : Integer);
 	  END;
 	WRITELN();
 	y -= 1;
+	DELAY(150);
       END;
   END;
 
