@@ -45,7 +45,9 @@ BEGIN
 END;
 
 BEGIN
+
   READ(n);
+
   SetLength(zahlen, n);
   Sortieren(zahlen, n);
 
