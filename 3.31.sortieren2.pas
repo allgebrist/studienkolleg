@@ -12,6 +12,12 @@ PROCEDURE Sortieren(vektor : array of Integer; laenge : Integer);
 
 BEGIN
 
+  FOR k := 0 TO laenge-1 DO
+    BEGIN
+      READ(vektor[k]);
+      vektor[k] := -vektor[k];
+    END;
+
   FOR i := 0 TO laenge-1 DO
     BEGIN
       temp_min_idx := i;
@@ -41,13 +47,6 @@ END;
 BEGIN
   READ(n);
   SetLength(zahlen, n);
-  
-  FOR k := 0 TO n-1 DO
-    BEGIN
-      READ(zahlen[k]);
-      zahlen[k] := -zahlen[k];
-    END;
-  
   Sortieren(zahlen, n);
 
 END.
