@@ -7,7 +7,7 @@ TYPE
   Knoten = ^Rec;
   Rec = RECORD
           wert : Integer;
-          next : Knoten;
+          naechste : Knoten;
          END;
 
 VAR
@@ -21,11 +21,11 @@ VAR
 BEGIN
   new(temp);
   temp^.wert := val;
-  temp^.next := NIL;
+  temp^.naechste := NIL;
   IF kopf = NIL THEN 
     kopf := temp
   ELSE 
-    ende^.next := temp;
+    ende^.naechste := temp;
   ende := temp;
 END;
 
@@ -38,7 +38,7 @@ BEGIN
   WHILE temp <> NIL DO
     BEGIN
       WRITELN(temp^.wert);
-      temp := temp^.next;
+      temp := temp^.naechste;
     END;
 END;
 
@@ -57,7 +57,7 @@ BEGIN
     BEGIN
       IF iter^.wert MOD 2 = 0 THEN
         WRITE(iter^.wert, ' ');
-      iter := iter^.next;
+      iter := iter^.naechste;
     END;
 
   WRITELN();
@@ -67,7 +67,7 @@ BEGIN
     BEGIN
       IF iter^.wert MOD 2 <> 0 THEN
         WRITE(iter^.wert, ' ');
-      iter := iter^.next;
+      iter := iter^.naechste;
     END;
 
   WRITELN();
@@ -77,7 +77,7 @@ BEGIN
     BEGIN
       IF iter^.wert >= 10 THEN
         WRITE(iter^.wert, ' ');
-      iter := iter^.next;
+      iter := iter^.naechste;
     END;
 
   WRITELN();
